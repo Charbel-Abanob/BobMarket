@@ -251,6 +251,9 @@ header {
   margin-bottom: auto;
   color: #fff;
 }
+.lists li {
+  display: inline;
+}
 
 .instagram {
   font-weight: bold;
