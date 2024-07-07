@@ -11,6 +11,8 @@ const image5 = document.querySelector("#img5");
 const image6 = document.querySelector("#img6");
 const image7 = document.querySelector("#img7");
 const image8 = document.querySelector("#img8");
+const image9 = document.querySelector("#img9");
+const image10 = document.querySelector("#img10");
 const price1 = document.querySelector(".p1");
 const price2 = document.querySelector(".p2");
 const price3 = document.querySelector(".p3");
@@ -96,6 +98,19 @@ image8.addEventListener("click", function () {
   price2.textContent = "70 000 LL";
   price3.textContent = "100 000 LL";
 });
+image9.addEventListener("click", function () {
+  showSquare();
+  description.textContent =
+    "Experience a delightful array of beverages and cold drinks. From rich coffees and soothing teas to refreshing cold brews, iced options, and beer, each drink is crafted to satisfy your cravings. Customize your drink to perfection and enjoy the perfect blend of flavors in every sip.";
+  price1.textContent = "Prices vary depending on your choice.";
+});
+
+image10.addEventListener("click", function () {
+  showSquare();
+  description.textContent =
+    "Indulge in the relaxing tradition of hookah with our premium blends. Choose from up to five enticing flavors, each crafted to enhance your smoking pleasure. Immerse yourself in the rich aroma and smooth smoke of our carefully prepared hookah, perfect for sharing with friends or enjoying solo in our cozy lounge.";
+  price1.textContent = "100 000 LL";
+});
 
 document.querySelector(".outer").addEventListener("click", function () {
   hideSquare();
@@ -107,11 +122,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// document.addEventListener("click", function (event) {
-//   if (!square.contains(event.target)) {
-//     hideSquare();
-//   }
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const letters = document.querySelectorAll(".letter");
 
