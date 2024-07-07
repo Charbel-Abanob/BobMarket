@@ -1,0 +1,541 @@
+.body {
+  background-image: url("images/wp3157726.webp");
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+}
+
+/* header .firstName span {
+  display: inline-block;
+  margin-right: -6px;
+}
+
+header .lastName span {
+  display: inline-block;
+  margin-right: -6px;
+}
+
+.Name {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  font-family: "Baskervville SC", sans-serif;
+}
+
+.b0,
+.m {
+  color: red;
+} */
+.bob-market {
+  font-size: 100px;
+  font-weight: bold;
+  display: block;
+}
+
+.bob-market span {
+  background: linear-gradient(45deg, black, white, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.bob-market span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 1.5s infinite;
+}
+
+.bob-market span:nth-child(1)::before {
+  animation-delay: 0s;
+}
+.bob-market span:nth-child(2)::before {
+  animation-delay: 0.2s;
+}
+.bob-market span:nth-child(3)::before {
+  animation-delay: 0.4s;
+}
+.bob-market span:nth-child(4)::before {
+  animation-delay: 0.6s;
+}
+.bob-market span:nth-child(5)::before {
+  animation-delay: 0.8s;
+}
+.bob-market span:nth-child(6)::before {
+  animation-delay: 1s;
+}
+.bob-market span:nth-child(7)::before {
+  animation-delay: 1.2s;
+}
+.bob-market span:nth-child(8)::before {
+  animation-delay: 1.4s;
+}
+.bob-market span:nth-child(9)::before {
+  animation-delay: 1.6s;
+}
+.bob-market span:nth-child(10)::before {
+  animation-delay: 1.8s;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.Items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 500px;
+  height: 500px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform property */
+}
+
+.item:hover {
+  cursor: pointer;
+  transform: scale(0.8); /* Scale up the item on hover */
+}
+
+.item:not(:hover) {
+  transform: scale(1); /* Return to normal size when not hovering */
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1); /* Start scale at normal size */
+  }
+
+  100% {
+    transform: scale(0.8); /* Scale up to 120% */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.square {
+  max-width: 400px;
+  background-color: red;
+  border-radius: 40px 4px;
+  padding: 10px;
+  color: whitesmoke;
+  z-index: 1;
+}
+.square::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-color: red;
+  border-radius: 40px 4px;
+  z-index: -1;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.price-item {
+  padding-left: 50px;
+}
+.desc {
+  display: block;
+  padding-left: 50px;
+}
+.description {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blur .Items {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141926;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.outer {
+  position: absolute;
+  margin: auto;
+  width: 30px;
+  margin-top: auto;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  transform: translate(80%, -55%);
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+label {
+  font-size: 0.8em;
+  line-height: 4em;
+  text-transform: uppercase;
+  color: black;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before,
+.inner:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: inherit;
+  background: black;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+
+.inner:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.inner:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
+header {
+  margin-bottom: 20px;
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 20px;
+  margin-bottom: auto;
+  color: #fff;
+}
+
+.instagram {
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.instagram span {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.instagram span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease-in-out;
+}
+
+.instagram:hover span:nth-child(1)::before {
+  animation: shine 1s ease-in-out 0s forwards;
+}
+.instagram:hover span:nth-child(2)::before {
+  animation: shine 1s ease-in-out 0.1s forwards;
+}
+.instagram:hover span:nth-child(3)::before {
+  animation: shine 1s ease-in-out 0.2s forwards;
+}
+.instagram:hover span:nth-child(4)::before {
+  animation: shine 1s ease-in-out 0.3s forwards;
+}
+.instagram:hover span:nth-child(5)::before {
+  animation: shine 1s ease-in-out 0.4s forwards;
+}
+.instagram:hover span:nth-child(6)::before {
+  animation: shine 1s ease-in-out 0.5s forwards;
+}
+.instagram:hover span:nth-child(7)::before {
+  animation: shine 1s ease-in-out 0.6s forwards;
+}
+.instagram:hover span:nth-child(8)::before {
+  animation: shine 1s ease-in-out 0.7s forwards;
+}
+.instagram:hover span:nth-child(9)::before {
+  animation: shine 1s ease-in-out 0.8s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.facebook {
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.facebook span {
+  background: linear-gradient(
+    45deg,
+    #1877f2,
+    #1877f2,
+    #1877f2,
+    #1877f2,
+    #1877f2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.facebook span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease-in-out;
+}
+
+.facebook:hover span:nth-child(1)::before {
+  animation: shine 1s ease-in-out 0s forwards;
+}
+.facebook:hover span:nth-child(2)::before {
+  animation: shine 1s ease-in-out 0.1s forwards;
+}
+.facebook:hover span:nth-child(3)::before {
+  animation: shine 1s ease-in-out 0.2s forwards;
+}
+.facebook:hover span:nth-child(4)::before {
+  animation: shine 1s ease-in-out 0.3s forwards;
+}
+.facebook:hover span:nth-child(5)::before {
+  animation: shine 1s ease-in-out 0.4s forwards;
+}
+.facebook:hover span:nth-child(6)::before {
+  animation: shine 1s ease-in-out 0.5s forwards;
+}
+.facebook:hover span:nth-child(7)::before {
+  animation: shine 1s ease-in-out 0.6s forwards;
+}
+.facebook:hover span:nth-child(8)::before {
+  animation: shine 1s ease-in-out 0.7s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.whatsapp {
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.whatsapp span {
+  background: linear-gradient(
+    45deg,
+    #25d366,
+    #25d366,
+    #25d366,
+    #25d366,
+    #25d366
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.whatsapp span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease-in-out;
+}
+
+.whatsapp:hover span:nth-child(1)::before {
+  animation: shine 1s ease-in-out 0s forwards;
+}
+.whatsapp:hover span:nth-child(2)::before {
+  animation: shine 1s ease-in-out 0.1s forwards;
+}
+.whatsapp:hover span:nth-child(3)::before {
+  animation: shine 1s ease-in-out 0.2s forwards;
+}
+.whatsapp:hover span:nth-child(4)::before {
+  animation: shine 1s ease-in-out 0.3s forwards;
+}
+.whatsapp:hover span:nth-child(5)::before {
+  animation: shine 1s ease-in-out 0.4s forwards;
+}
+.whatsapp:hover span:nth-child(6)::before {
+  animation: shine 1s ease-in-out 0.5s forwards;
+}
+.whatsapp:hover span:nth-child(7)::before {
+  animation: shine 1s ease-in-out 0.6s forwards;
+}
+.whatsapp:hover span:nth-child(8)::before {
+  animation: shine 1s ease-in-out 0.7s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.social-media {
+  font-size: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.char1 {
+  margin-right: 40px;
+}
+
+@media (hover: none) {
+  /* Apply styles when there is no hover support (touchscreen devices) */
+  .shine:hover {
+    /* Define hover styles here if needed for devices that simulate hover on touch */
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff6b00, 0 0 40px #ff6b00,
+      0 0 50px #ff6b00, 0 0 60px #ff6b00, 0 0 70px #ff6b00, 0 0 80px #ff6b00;
+  }
+}
+.instagram,
+.facebook,
+.whatsapp:hover {
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between; /* Items spaced evenly */
+  align-items: flex-start;
+}
+.me,
+.lists {
+  flex: 1; /* Equal width for both containers */
+}
+
+.me {
+  padding-left: 20px;
+  list-style: none;
+  position: fixed;
+}
+.name,
+.phone-number {
+  color: silver;
+}
+.eng,
+.PN {
+  color: #ffd700;
+}
