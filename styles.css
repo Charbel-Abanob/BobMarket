@@ -250,9 +250,11 @@ header {
   padding-right: 20px;
   margin-bottom: auto;
   color: #fff;
+  white-space: nowrap;
 }
 .lists li {
   display: inline;
+  
 }
 
 .instagram {
