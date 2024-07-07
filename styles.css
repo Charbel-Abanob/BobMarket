@@ -472,6 +472,7 @@ header {
 
 .social-media {
   font-size: 20px;
+   width: fit-content;
 }
 .center {
   display: flex;
