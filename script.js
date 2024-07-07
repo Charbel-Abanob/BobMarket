@@ -45,6 +45,7 @@ image2.addEventListener("click", function () {
   price1.textContent = "200 000 LL";
   price2.textContent = "250 000 LL";
   price3.textContent = "300 000 LL";
+  price4.textContent = "";
 });
 
 image3.addEventListener("click", function () {
@@ -53,6 +54,8 @@ image3.addEventListener("click", function () {
     "Treat yourself to our customizable ice cream box, available in two generous sizes: 500g or 1000g. Perfect for sharing or indulging solo, fill it with your favorite flavors and enjoy a delightful dessert experience!";
   price1.textContent = "500 000 LL";
   price2.textContent = "900 000 LL";
+  price3.textContent = "";
+  price4.textContent = "";
 });
 
 image4.addEventListener("click", function () {
@@ -62,6 +65,7 @@ image4.addEventListener("click", function () {
   price1.textContent = "150 000 LL ";
   price2.textContent = "200 000 LL";
   price3.textContent = "300 000 LL";
+  price4.textContent = "";
 });
 
 image5.addEventListener("click", function () {
@@ -89,6 +93,7 @@ image7.addEventListener("click", function () {
   price1.textContent = "60 000 LL";
   price2.textContent = "80 000 LL";
   price3.textContent = "100 000 LL";
+  price4.textContent = "";
 });
 image8.addEventListener("click", function () {
   showSquare();
@@ -97,12 +102,16 @@ image8.addEventListener("click", function () {
   price1.textContent = "50 000 LL";
   price2.textContent = "70 000 LL";
   price3.textContent = "100 000 LL";
+  price4.textContent = "";
 });
 image9.addEventListener("click", function () {
   showSquare();
   description.textContent =
     "Experience a delightful array of beverages and cold drinks. From rich coffees and soothing teas to refreshing cold brews, iced options, and beer, each drink is crafted to satisfy your cravings. Customize your drink to perfection and enjoy the perfect blend of flavors in every sip.";
   price1.textContent = "Prices vary depending on your choice.";
+  price2.textContent = "";
+  price3.textContent = "";
+  price4.textContent = "";
 });
 
 image10.addEventListener("click", function () {
@@ -110,6 +119,9 @@ image10.addEventListener("click", function () {
   description.textContent =
     "Indulge in the relaxing tradition of hookah with our premium blends. Choose from up to five enticing flavors, each crafted to enhance your smoking pleasure. Immerse yourself in the rich aroma and smooth smoke of our carefully prepared hookah, perfect for sharing with friends or enjoying solo in our cozy lounge.";
   price1.textContent = "100 000 LL";
+  price2.textContent = "";
+  price3.textContent = "";
+  price4.textContent = "";
 });
 
 document.querySelector(".outer").addEventListener("click", function () {
