@@ -6,30 +6,6 @@
   background-attachment: fixed;
 }
 
-/* header .firstName span {
-  display: inline-block;
-  margin-right: -6px;
-}
-
-header .lastName span {
-  display: inline-block;
-  margin-right: -6px;
-}
-
-.Name {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  justify-content: center;
-  font-size: 50px;
-  color: white;
-  font-family: "Baskervville SC", sans-serif;
-}
-
-.b0,
-.m {
-  color: red;
-} */
 .bob-market {
   font-size: 100px;
   font-weight: bold;
@@ -529,7 +505,6 @@ header {
 .me {
   padding-left: 20px;
   list-style: none;
-  position: fixed;
 }
 .name,
 .phone-number {
@@ -538,4 +513,91 @@ header {
 .eng,
 .PN {
   color: #ffd700;
+}
+
+@media (max-width: 791px) {
+  .bob-market {
+    font-size: 80px;
+  }
+
+  .info,
+  .social-media {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 641px) {
+  .bob-market {
+    font-size: 60px;
+  }
+
+  .info,
+  .social-media {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 492px) {
+  .bob-market {
+    font-size: 40px;
+  }
+  .item {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 440px) {
+  .info,
+  .social-media {
+    font-size: 8px;
+  }
+
+  .item {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 380px) {
+  .lists {
+    gap: 10px;
+  }
+  .item {
+    width: 355px;
+    height: 355px;
+  }
+}
+@media (max-width: 355px) {
+  .lists {
+    flex-direction: column;
+    gap: 2px;
+    align-items: end;
+    padding-right: 20px;
+  }
+  .item {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 340px) {
+  .bob-market {
+    font-size: 30px;
+  }
+  .char1 {
+    margin-right: 10px;
+  }
+
+  .item {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .item {
+    width: 320px;
+    height: 320px;
+  }
 }
